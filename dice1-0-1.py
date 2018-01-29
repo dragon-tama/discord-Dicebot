@@ -22,7 +22,7 @@ async def on_message(message):
             res = "e.g. if you send \'!1d100\', this bot return the result."
             await client.send_message(message.channel, res)
 
-    if message.content.startswith('!'):
+    elif message.content.startswith('!'):
         if client.user != message.author:
             m = message.content.lstrip('!')
             dice = m.split('d')
