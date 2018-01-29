@@ -19,7 +19,7 @@ async def on_message(message):
     
     if message.content.startswith('!help'):
         if client.user != message.author:
-            res = "exp.) if you send \'!1d100\'.\nthis bot return the result."
+            res = "e.g. if you send \'!1d100\', this bot return the result."
             await client.send_message(message.channel, res)
 
     if message.content.startswith('!'):
